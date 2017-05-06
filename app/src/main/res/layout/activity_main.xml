@@ -15,23 +15,66 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_num1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Número 1"
         android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tv2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Ingrese el segundo número:"
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/et_num2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
+        android:hint="Número 2"
         android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado: "
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/b_suma"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Suma" />
+
+    <Button
+        android:id="@+id/b_resta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resta" />
+
+    <Button
+        android:id="@+id/b_multi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Multiplicación" />
+
+    <Button
+        android:id="@+id/b_divi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="División" />
+
 </LinearLayout>
