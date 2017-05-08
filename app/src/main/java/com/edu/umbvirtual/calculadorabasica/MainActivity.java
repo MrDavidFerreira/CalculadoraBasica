@@ -1,13 +1,11 @@
 package com.edu.umbvirtual.calculadorabasica;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,6 +41,30 @@ public class MainActivity extends AppCompatActivity {
                 //Calcula la suma
                 result = num1 + num2;
                 //Muestra la suma en el TextView de resultado
+                tv_result.setText(String.valueOf(result));
+            }
+        });
+
+        //Listener en respuesta del botón de restar
+        b_resta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtenerNumeros();
+                //Calcula la resta
+                result = num1 - num2;
+                //Muestra la resta en el TextView de resultado
+                tv_result.setText(String.valueOf(result));
+            }
+        });
+
+        //Listener en respuesta del botón de multiplicar
+        b_multi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                obtenerNumeros();
+                //Calcula la multiplicacion
+                result = num1 * num2;
+                //Muestra la multiplicacion en el TextView de resultado
                 tv_result.setText(String.valueOf(result));
             }
         });
